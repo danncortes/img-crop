@@ -2,22 +2,29 @@
   display: flex;
   justify-content: center;
   padding: 3px;
-}
-
-.image-container {
-  height: 500px;
-  outline:3px solid #222;
-  -webkit-filter: brightness(50%);
-  filter: brightness(50%);
   position: relative;
 }
 
+.image-container {
+  height: 334px;
+  outline:3px solid #222;
+  -webkit-filter: brightness(50%);
+  filter: brightness(50%);
+}
+
 .image-container__img {
-  height: 100%;
 }
 
 .image-container__crop-frame {
-  position: absolute;
   height: 100px;
   width: 200px;
+}
+
+.image-crop__canvas {
+  z-index: 1;
+  cursor: grabbing;
+  position: absolute;
+  left:0;
+  top:0;
+  background-color: rgba(255,255,255, 0.2);
 }
