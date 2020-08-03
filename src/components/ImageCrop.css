@@ -1,0 +1,23 @@
+.image-crop-component {
+  display: flex;
+  justify-content: center;
+  padding: 3px;
+}
+
+.image-container {
+  height: 500px;
+  outline:3px solid #222;
+  -webkit-filter: brightness(50%);
+  filter: brightness(50%);
+  position: relative;
+}
+
+.image-container__img {
+  height: 100%;
+}
+
+.image-container__crop-frame {
+  position: absolute;
+  height: 100px;
+  width: 200px;
+}
